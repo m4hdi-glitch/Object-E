@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#palette {
+  width: 180px;
+  padding: 10px;
+  background: #f3f3f3;
+  border-right: 2px solid #ccc;
+}
+
+.palette-item {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+#designArea {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #eee;
+  position: relative;
+}
+
+.component {
+  background: white;
+  border: 1px solid #888;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.led {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: background-color 0.3s;
+}
+
+#blocklyDiv {
+  height: 400px;
+  width: 100%;
+  border-top: 2px solid #ccc;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  user-select: none;
+}
+
+#blockArea {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
